@@ -56,11 +56,6 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: '*.(woff|woff2)',
-          to: './fonts/',
-          context: 'src/fonts/',
-        },
-        {
           from: '**/*.(svg|png|jpg|jpeg)',
           to: './img/',
           context: './src/img/',
