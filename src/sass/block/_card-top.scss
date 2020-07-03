@@ -38,6 +38,12 @@
   @extend %transition;
 }
 
+.card-top__btn-back-text {
+  @media (max-width: 800px - 1) {
+    display: none;
+  }
+}
+
 .card-top__list-btn {
   display: flex;
 }

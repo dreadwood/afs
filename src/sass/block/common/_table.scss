@@ -8,6 +8,7 @@
   padding: 0;
 
   @include font;
+  vertical-align: baseline;
   color: $color-table-descr;
 
   border-right: 12px solid transparent;
@@ -18,6 +19,7 @@
   padding: 0;
 
   @include font;
+  vertical-align: baseline;
   color: $color-table-text;
 
   border-bottom: 12px solid transparent;
