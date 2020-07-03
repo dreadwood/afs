@@ -1,11 +1,289 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
 
+<body class="page-body">
+  <section class="sidebar">
+    <div class="sidebar__menu main-menu">
+      <div class="main-menu__company">
+        <button class="main-menu__btn main-menu__btn--home">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Главное меню</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--items">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Товары</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--sol">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Решения</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--add">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Дополнения</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--set">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Настройки</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--docs">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Документы</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--search">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Поиск</span>
+        </button>
+      </div>
+      <div class="main-menu__account">
+        <button class="main-menu__btn main-menu__btn--chat">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Чат</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--acc">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Настройки аккаунта</span>
+        </button>
+        <button class="main-menu__btn main-menu__btn--exit">
+          <span class="main-menu__btn-img"></span>
+          <span class="visually-hidden">Выйти из аккаунта</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar__list main-list">
+      <div class="main-list__company">
+        <h2 class="main-list__company-name">Честный агент</h2>
+        <p class="main-list__company-descr">Mенеджер процесса</p>
+      </div>
+      <button class="main-list__btn main-list__btn--actv">
+        <span class="main-list__btn-img"></span>
+        <span class="main-list__btn-text">Организации</span>
+      </button>
+      <button class="main-list__btn">
+        <span class="main-list__btn-img"></span>
+        <span class="main-list__btn-text">Организации</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card__header card-top">
+      <button class="card-top__btn-back">
+        <span class="card-top__btn-back-img"></span>
+        <span class="card-top__btn-back-text">К списку юридических лиц</span>
+      </button>
+      <div class="card-top__list-btn">
+        <button class="card-top__btn card-top__btn--link">
+          <span class="card-top__btn-img"></span>
+          <span class="visually-hidden">Ссылка на карточку</span>
+        </button>
+        <button class="card-top__btn card-top__btn--arch">
+          <span class="card-top__btn-img"></span>
+          <span class="visually-hidden">Ссылка на карточку</span>
+        </button>
+        <button class="card-top__btn card-top__btn--del">
+          <span class="card-top__btn-img"></span>
+          <span class="visually-hidden">Ссылка на карточку</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="card__wrapper">
+      <div class="card__block-list">
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title-big">
+            <span class="card-block__title-big-text">Перспективные захоронения</span>
+            <button class="card-block__title-big-btn">
+              <span class="visually-hidden">Редактировать заголовок</span>
+            </button>
+          </h3>
+        </div>
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title">
+            <span class="card-block__title-text">Общая информация</span>
+            <button class="card-block__title-btn">
+              <span class="visually-hidden">Редактировать заголовок</span>
+            </button>
+          </h3>
+
+          <table class="card-block__table table">
+            <tr>
+              <th class="table__descr">Полное название:</th>
+              <td class="table__text">ООО Фирма “Перспективные захоронения”</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Договор:</th>
+              <td class="table__text">12345 от 12.03.2015, расторгнут 20.05.2017</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Форма:</th>
+              <td class="table__text">ООО</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Тип:</th>
+              <td class="table__text">Агент, Подрядчик</td>
+            </tr>
+          </table>
+        </div>
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title">
+            <span class="card-block__title-text">Контактные данные</span>
+            <button class="card-block__title-btn">
+              <span class="visually-hidden">Редактировать заголовок</span>
+            </button>
+          </h3>
+
+          <table class="card-block__table table">
+            <tr>
+              <th class="table__descr">ФИО:</th>
+              <td class="table__text">Григорьев Сергей Петрович</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Телефон:</th>
+              <td class="table__text">
+                <a href="tel:+79162165588">+7 (916) 216-55-88</a>
+              </td>
+            </tr>
+            <tr>
+              <th class="table__descr">Эл. почта:</th>
+              <td class="table__text">
+                <a href="mailto:grigoriev@funeral.com">grigoriev@funeral.com</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title">
+            <span class="card-block__title-text">Адреса и телефоны</span>
+            <button class="card-block__title-btn">
+              <span class="visually-hidden">Редактировать заголовок</span>
+            </button>
+          </h3>
+
+          <table class="card-block__table table">
+            <tr>
+              <th class="table__descr">Юр. адрес:</th>
+              <td class="table__text">105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Юр. телефон:</th>
+              <td class="table__text">
+                <a href="tel:+74953455588">+7 (495) 345-55-88</a>
+              </td>
+            </tr>
+            <tr>
+              <th class="table__descr">Фактич. адрес:</th>
+              <td class="table__text">105173, г. Балашиха, ул. Молодежная, д. 12А корп. 2, офис 312</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Телефон:</th>
+              <td class="table__text">
+                <a href="tel:+79162165588">+7 (916) 216-55-88</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title">
+            <span class="card-block__title-text">Реквизиты организации</span>
+            <button class="card-block__title-btn">
+              <span class="visually-hidden">Редактировать заголовок</span>
+            </button>
+          </h3>
+
+          <table class="card-block__table table">
+            <tr>
+              <th class="table__descr">БИК:</th>
+              <td class="table__text">044525225</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Банк:</th>
+              <td class="table__text">ПАО СБЕРБАНК</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Р/С:</th>
+              <td class="table__text">4070 2810 0000 9000 1425</td>
+            </tr>
+            <tr>
+              <th class="table__descr">К/С:</th>
+              <td class="table__text">3010 1810 5403 0000 0795 БИК 044 030 795</td>
+            </tr>
+            <tr>
+              <th class="table__descr">ИНН:</th>
+              <td class="table__text">1001254535</td>
+            </tr>
+            <tr>
+              <th class="table__descr">КПП:</th>
+              <td class="table__text">773101001</td>
+            </tr>
+            <tr>
+              <th class="table__descr">ОГРН:</th>
+              <td class="table__text">1053600591197</td>
+            </tr>
+            <tr>
+              <th class="table__descr">Ген. директор:</th>
+              <td class="table__text">Степаненко Игорь Яковлевич</td>
+            </tr>
+          </table>
+        </div>
+        <!-- блок -->
+        <div class="card__block card-block">
+          <h3 class="card-block__title">Приложенные файлы</h3>
+
+          <div class="card-block__attach-list">
+            <div class="card-block__attach attach">
+              <span class="attach__img"></span>
+              <span class="attach__title">Договор ЗН 1234-4567.pdf</span>
+              <span class="attach__file">Файл PDF, 1.2 МБ</span>
+              <button class="attach__btn-del">
+                <span class="visually-hidden">Открепить файл</span>
+              </button>
+            </div>
+            <div class="card-block__attach attach">
+              <span class="attach__img"></span>
+              <span class="attach__title">Фотографии счета на оплату.zip</span>
+              <!-- Фотографии счета на оп... () -->
+              <span class="attach__file">Файл ZIP, 200 КБ</span>
+              <button class="attach__btn-del">
+                <span class="visually-hidden">Открепить файл</span>
+              </button>
+            </div>
+            <div class="card-block__attach attach">
+              <span class="attach__img"></span>
+              <span class="attach__title">Документы за декабрь.zip</span>
+              <span class="attach__file">Файл ZIP, 200 КБ</span>
+              <button class="attach__btn-del">
+                <span class="visually-hidden">Открепить файл</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="card__button button">
+            <span class="button__img"></span>
+            <span class="button__text">Добавить файл</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="card__footer card-bottom">
+        <p class="card-bottom__copyright">© 1992 - 2020 Честный Агент © Все права защищены.</p>
+        <p class="card-bottom__copyright">
+          <a href="tel:+74951502112">8 (495) 150-21-12 </a>
+        </p>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
