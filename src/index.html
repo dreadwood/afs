@@ -111,13 +111,13 @@
           <svg class="card-top__btn-img">
             <use xlink:href="img/sprite.svg#icon-card-history"></use>
           </svg>
-          <span class="visually-hidden">Ссылка на карточку</span>
+          <span class="visually-hidden">Архивировать карточку</span>
         </button>
         <button class="card-top__btn card-top__btn--del">
           <svg class="card-top__btn-img">
             <use xlink:href="img/sprite.svg#icon-card-delete"></use>
           </svg>
-          <span class="visually-hidden">Ссылка на карточку</span>
+          <span class="visually-hidden">Удалить карточку</span>
         </button>
       </div>
     </div>
@@ -329,6 +329,16 @@
       </div>
     </div>
   </section>
+
+  <div class="overlay">
+    <div class="modal" role="dialog">
+      <h2 class="modal__title">Удалить карточку</h2>
+      <p class="modal__text">Отправить карточку организации в архив?</p>
+      <div class="modal__btn-list">
+        <button class="modal__btn modal__btn--cancel">Отмена</button>
+        <button class="modal__btn modal__btn--del">Удалить</button>
+      </div>
+    </div>
 </body>
 
 </html>
