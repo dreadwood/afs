@@ -1,7 +1,7 @@
 .attach {
   display: grid;
   grid-template-columns: 35px 150px 18px;
-  grid-template-rows: 2;
+  grid-template-rows: 2fr;
 }
 
 .attach__img {

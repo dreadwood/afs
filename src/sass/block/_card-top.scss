@@ -16,16 +16,17 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
   @extend %transition;
 
   &:hover,
   &:focus {
-    color: darken($color-main, 25%)
+    color: darken($color-main, 25%);
   }
 
   &:hover .card-top__btn-back-img,
   &:focus .card-top__btn-back-img {
-    fill: darken($color-main, 25%)
+    fill: darken($color-main, 25%);
   }
 }
 
@@ -35,6 +36,7 @@
   margin-right: 16px;
 
   fill: $color-main;
+
   @extend %transition;
 }
 
@@ -75,7 +77,7 @@
   &--del .card-top__btn-img {
     fill: $color-icon-trash;
   }
-  
+
   &--del:hover .card-top__btn-img,
   &--del:focus .card-top__btn-img {
     fill: darken($color-icon-trash, 25%);

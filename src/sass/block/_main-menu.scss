@@ -21,7 +21,7 @@
   align-items: center;
   padding: 15px 0;
 
-  box-shadow: 0 -9px 0 -8px $color-menu-line ;
+  box-shadow: 0 -9px 0 -8px $color-menu-line;
 }
 
 .main-menu__btn {
@@ -52,5 +52,6 @@
 
   fill: $color-white;
   stroke: $color-white;
+
   @extend %transition;
 }

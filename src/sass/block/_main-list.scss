@@ -36,10 +36,11 @@
 
   @include font(14px, 18px, 600);
   color: $color-main;
-  
+
   background-color: $color-menu-btn-bg;
   border: 0;
   cursor: pointer;
+
   @extend %transition;
 
   &:hover,

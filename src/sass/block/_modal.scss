@@ -4,7 +4,7 @@
   padding: 24px;
 
   background-color: $color-white;
-  box-shadow: 0 5px 40px transparentize($color-black, 0.85);
+  box-shadow: 0 5px 40px 0 transparentize($color-black, 0.85);
 }
 
 .modal__title {
@@ -38,6 +38,7 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+
   @extend %transition;
 
   &:hover,
@@ -49,8 +50,8 @@
     color: $color-main;
 
     &:hover,
-  &:focus {
-    color: darken($color-main, 25%);
-  }
+    &:focus {
+      color: darken($color-main, 25%);
+    }
   }
 }

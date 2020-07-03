@@ -1,5 +1,7 @@
 .card {
   flex-grow: 1;
+
+  box-shadow: -8px 0 21px 0 transparentize($color-black, 0.928);
 }
 
 .card__wrapper {
