@@ -9,5 +9,16 @@
 @import "vendor/visually-hidden";
 
 // common blocks
+@import "block/common/table";
+@import "block/common/attach";
+@import "block/common/button";
 
 // block
+@import "block/page-body";
+@import "block/sidebar";
+@import "block/main-menu";
+@import "block/main-list";
+@import "block/card";
+@import "block/card-top";
+@import "block/card-block";
+@import "block/card-bottom";

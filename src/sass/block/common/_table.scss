@@ -1,0 +1,53 @@
+.table {
+
+}
+
+.table__descr {
+  width: 150px;
+  margin-right: 12px;
+  padding: 0;
+
+  @include font;
+  color: $color-table-descr;
+
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.table__text {
+  padding: 0;
+
+  @include font;
+  color: $color-table-text;
+
+  border-bottom: 12px solid transparent;
+  
+  & a {
+    cursor: pointer;
+    @extend %transition;
+  }
+
+  & a[href^=tel] {
+    color: $color-table-text;  
+    
+    &:hover,
+    &:focus {
+      color: darken($color-table-text, 25%);
+    }
+  }
+
+  & a[href^=mailto] {
+    color: $color-main;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: darken($color-main, 25%);
+    }
+  }
+}
+
+tr:last-child .table__descr,
+tr:last-child .table__text {
+  border-bottom: 0;
+}

@@ -4,16 +4,6 @@
 
   list-style: none;
 }
-// возможно убрать
-%pseudo {
-  content: "";
-
-  position: absolute;
-
-  display: block;
-
-  background-repeat: no-repeat;
-}
 
 %transition {
   transition: all 0.3s ease-out;

@@ -1,0 +1,25 @@
+.card-bottom {
+  padding: 40px 20px;
+}
+
+.card-bottom__copyright {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include font(12px, 14px, 400, center);
+
+  color: $color-footer-text;
+
+  & a[href^="tel"] {
+    text-align: center;
+    color: $color-footer-text;
+
+    cursor: pointer;
+    @extend %transition;
+
+    &:hover,
+    &:focus {
+      color: darken($color-footer-text, 25%);
+    }
+  }
+}

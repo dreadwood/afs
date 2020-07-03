@@ -1,0 +1,68 @@
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top__btn-back {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+  @include font(16px, 20px, 600);
+  color: $color-main;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.card-top__btn-back-img {
+  width: 16px;
+  height: 12px;
+  margin-right: 16px;
+
+  background-repeat: no-repeat;
+  background-image: url("../../img/icon-card-arrow.svg");
+}
+
+.card-top__btn-back-text {
+
+}
+
+.card-top__list-btn {
+  display: flex;
+}
+
+.card-top__btn {
+  margin-right: 24px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--link .card-top__btn-img {
+    background-image: url("../../img/icon-card-chain.svg");
+  }
+
+  &--arch .card-top__btn-img {
+    background-image: url("../../img/icon-card-history.svg");
+  }
+
+  &--del .card-top__btn-img {
+    background-image: url("../../img/icon-card-delete.svg");
+  }
+}
+
+.card-top__btn-img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}

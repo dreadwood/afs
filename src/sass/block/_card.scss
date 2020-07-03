@@ -1,0 +1,23 @@
+.card {
+  flex-grow: 1;
+}
+
+.card__wrapper {
+  height: calc(100vh - 72px);
+  overflow-y: scroll;
+}
+
+.card__header {
+  height: 72px;
+  padding: 10px 40px;
+
+  border-bottom: 1px solid $color-card-line;
+}
+
+.card__block-list {
+  padding: 0 40px;
+}
+
+.card__block {
+  border-bottom: 1px solid $color-card-line;
+}

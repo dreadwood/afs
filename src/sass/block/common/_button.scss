@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+
+  @include font(14px, 21px);
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: $color-main;
+  border: 0;
+  cursor: pointer;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-main, 25%);
+  }
+}
+
+.button__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/icon-btn-add.svg");
+}
+
+.button__text {
+
+}
