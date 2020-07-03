@@ -24,7 +24,7 @@
   @include font(12px, 19px, 400, center);
   color: $color-sidebar-title;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2px;
 }
 
 .main-list__btn {
@@ -59,8 +59,4 @@
 
   background-image: url("../../img/icon-list-build.svg");
   background-repeat: no-repeat;
-}
-
-.main-list__btn-text {
-
 }
