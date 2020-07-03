@@ -16,6 +16,17 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: darken($color-main, 25%)
+  }
+
+  &:hover .card-top__btn-back-img,
+  &:focus .card-top__btn-back-img {
+    fill: darken($color-main, 25%)
+  }
 }
 
 .card-top__btn-back-img {
@@ -23,12 +34,8 @@
   height: 12px;
   margin-right: 16px;
 
-  background-repeat: no-repeat;
-  background-image: url("../../img/icon-card-arrow.svg");
-}
-
-.card-top__btn-back-text {
-
+  fill: $color-main;
+  @extend %transition;
 }
 
 .card-top__list-btn {
@@ -47,16 +54,25 @@
     margin-right: 0;
   }
 
-  &--link .card-top__btn-img {
-    background-image: url("../../img/icon-card-chain.svg");
+  &--link .card-top__btn-img,
+  &--arch .card-top__btn-img {
+    fill: $color-main;
   }
 
-  &--arch .card-top__btn-img {
-    background-image: url("../../img/icon-card-history.svg");
+  &--link:hover .card-top__btn-img,
+  &--link:focus .card-top__btn-img,
+  &--arch:hover .card-top__btn-img,
+  &--arch:focus .card-top__btn-img {
+    fill: darken($color-main, 25%);
   }
 
   &--del .card-top__btn-img {
-    background-image: url("../../img/icon-card-delete.svg");
+    fill: $color-icon-trash;
+  }
+  
+  &--del:hover .card-top__btn-img,
+  &--del:focus .card-top__btn-img {
+    fill: darken($color-icon-trash, 25%);
   }
 }
 
@@ -64,5 +80,6 @@
   display: block;
   width: 24px;
   height: 24px;
-  background-repeat: no-repeat;
+
+  @extend %transition;
 }

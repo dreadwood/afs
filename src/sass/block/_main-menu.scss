@@ -37,6 +37,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover .main-menu__btn-img,
+  &:focus .main-menu__btn-img {
+    fill: darken($color-white, 25%);
+    stroke: darken($color-white, 25%);
+  }
 }
 
 .main-menu__btn-img {
@@ -44,46 +50,7 @@
   width: 20px;
   height: 20px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.main-menu__btn--home .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-home.svg");
-}
-
-.main-menu__btn--items .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-bag.svg");
-}
-
-.main-menu__btn--sol .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-tools.svg");
-}
-
-.main-menu__btn--add .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-catalog.svg");
-}
-
-.main-menu__btn--set .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-set.svg");
-}
-
-.main-menu__btn--docs .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-docs.svg");
-}
-
-.main-menu__btn--search .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-search.svg");
-}
-
-.main-menu__btn--chat .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-chat.svg");
-}
-
-.main-menu__btn--acc .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-account.svg");
-}
-
-.main-menu__btn--exit .main-menu__btn-img {
-  background-image: url("../../img/icon-menu-exit.svg");
+  fill: $color-white;
+  stroke: $color-white;
+  @extend %transition;
 }
