@@ -9,7 +9,9 @@
 
   background-color: $color-main;
   border: 0;
+  border-radius: 2px;
   cursor: pointer;
+
   @extend %transition;
 
   &:hover,
@@ -26,8 +28,4 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("../../../img/icon-btn-add.svg");
-}
-
-.button__text {
-
 }

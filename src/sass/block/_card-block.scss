@@ -1,5 +1,7 @@
 .card-block {
   padding: 28px 0 28px 0;
+
+  box-shadow: 0 -1px 0 0 $color-card-line inset;
 }
 
 .card-block__title {

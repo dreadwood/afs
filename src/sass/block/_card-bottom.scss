@@ -1,14 +1,18 @@
 .card-bottom {
-  padding: 40px 20px;
+  padding: 40px 20px 60px 20px;
 }
 
 .card-bottom__copyright {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   @include font(12px, 14px, 400, center);
 
   color: $color-footer-text;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   & a[href^="tel"] {
     text-align: center;
